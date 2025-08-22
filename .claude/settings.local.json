@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git add CLAUDE.md main.go go.mod)",
+      "Bash(gh issue comment 1 --body \"Accepting this task. Will create a feature branch to implement ML fundamentals including basic concepts, matrices, and vectors.\")",
+      "Bash(git checkout -b feature/ml-fundamentals)",
+      "Bash(go mod tidy)",
+      "Bash(go run ml_example.go)",
+      "Bash(git add ml/ ml_example.go)",
+      "Bash(git push origin feature/ml-fundamentals)"
+    ],
+    "deny": []
+  }
+}
